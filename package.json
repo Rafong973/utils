@@ -1,0 +1,19 @@
+{
+  "name": "@rafong/utils",
+  "version": "1.0.0",
+  "description": "常用工具类方法",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config rollup.config.js"
+  },
+  "keywords": [
+    "工具类"
+  ],
+  "author": "Rafong",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
+    "rollup": "^3.23.0"
+  }
+}
