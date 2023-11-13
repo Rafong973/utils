@@ -36,7 +36,7 @@ export const isNullSymbol = (sym) => {
 
 // 空数组
 export const isNullArray = (arr) => {
-  if (!arr || arr === [] || arr.length <= 0) return true
+  if (!arr || arr == [] || arr.length <= 0) return true
   return false
 }
 // 空数字
@@ -176,8 +176,8 @@ export const captureName = (str) => {
   return str.replace(str[0], str[0].toUpperCase())
 }
 
-export const dataURLtoBlob = (dataurl) => {
-  const arr = dataurl.split(',')
+export const dataURLtoBlob = (dataUrl) => {
+  const arr = dataUrl.split(',')
   const mime = arr[0].match(/:(.*?);/)[1]
   const bstr = atob(arr[1])
   let n = bstr.length
